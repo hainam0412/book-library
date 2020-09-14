@@ -1,0 +1,44 @@
+<div class="detail" *ngIf="book">
+  <h3 class="mb-15">{{ book.title }}</h3>
+  <p class="mb-15"><strong class="fz-12">Details</strong></p>
+
+  <table class="w-10">
+    <tr>
+      <td class="text-center">Title:</td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="book.title"
+          placeholder="title"
+          class="form-control w-10"
+        />
+      </td>
+    </tr>
+
+    <tr>
+      <td class="text-center">Author :</td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="book.author"
+          placeholder="Author"
+          class="form-control w-10"
+        />
+      </td>
+    </tr>
+
+    <tr>
+      <td class="text-center">Tag:</td>
+
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="book.tag"
+          readonly
+          placeholder="Tag"
+          class="form-control w-10"
+        />
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+<div class="p-20" *ngIf="messageService.messages.length">
+  <div *ngFor="let message of messageService.messages">
+    <h3 class="mb-15">Message</h3>
+
+    <p class="mb-15">{{ message }}</p>
+
+    <button class="delete" (click)="messageService.deleteAllMessage()">
+      Delete Message
+    </button>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<ul class="label">
+  <li>Name</li>
+  <li>Author</li>
+  <li>Tags</li>
+</ul>
+
+<ul class="list-book" *ngFor="let book of books">
+  <li
+    class="d-flex"
+    (click)="onSelect(book)"
+    [class.selected]="book == selectedBook"
+  >
+    <div class="book-title">
+      {{ book.title }}
+    </div>
+
+    <div class="book-author">
+      {{ book.author }}
+    </div>
+
+    <div class="book-tag">
+      <span *ngFor="let tag of book.tag">
+        {{ tag }}
+      </span>
+    </div>
+  </li>
+</ul>
+
+<app-book-details [book]="selectedBook"></app-book-details>
+<app-message></app-message>
