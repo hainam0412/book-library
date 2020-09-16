@@ -1,0 +1,29 @@
+<div>
+  <div class="form w-4 m-auto p-15">
+    <div class="form-item mb-15">
+      <input #title type="text" class="form-control" placeholder="Title" />
+    </div>
+
+    <div class="form-item mb-15">
+      <input #author type="text" class="form-control" placeholder="Author" />
+    </div>
+
+    <div class="form-item mb-15">
+      <input #tag type="text" class="form-control" placeholder="Tag" />
+    </div>
+
+    <div class="form-item text-center">
+      <button
+        class="btn btn-primary btn-round fz-14"
+        (click)="
+          createBook(title.value, author.value, tag.value);
+          title.value = '';
+          author.value = '';
+          tag.value = ''
+        "
+      >
+        Add Book
+      </button>
+    </div>
+  </div>
+</div>

@@ -8,18 +8,22 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { BookService } from './book.service';
 import { MessageService } from './message.service';
 import { MessageComponent } from './message/message.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CreateBookComponent } from './create-book/create-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
     BookDetailsComponent,
-    MessageComponent
+    MessageComponent,
+    CreateBookComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     BookService

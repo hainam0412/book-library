@@ -2,7 +2,7 @@
   <h3 class="mb-15">{{ book.title }}</h3>
   <p class="mb-15"><strong class="fz-12">Details</strong></p>
 
-  <table class="w-10">
+  <table class="w-10 mb-15">
     <tr>
       <td class="text-center">Title:</td>
       <td>
@@ -34,11 +34,21 @@
         <input
           type="text"
           [(ngModel)]="book.tag"
-          readonly
           placeholder="Tag"
           class="form-control w-10"
         />
       </td>
     </tr>
   </table>
+
+  <button class="mr-15 btn btn-success btn-round fw-5" (click)="save()">
+    Update
+  </button>
+  <button (click)="goBack()" class="btn btn-primary btn-round fw-5 mr-15">
+    Go back
+  </button>
+
+  <button (click)="deleteBook()" class="btn btn-danger btn-round fw-5">
+    Delete
+  </button>
 </div>

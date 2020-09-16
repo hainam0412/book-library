@@ -20,10 +20,11 @@ export class BookComponent implements OnInit {
     this.getBookFromServices();
   }
 
-  //Event binding
+  /*//Event binding
   selectedBook: Book;
   onSelect(book: Book): void {
     this.selectedBook = book;
   }
+  */
 
 }

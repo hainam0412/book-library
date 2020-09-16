@@ -1,30 +1,48 @@
-<ul class="label">
-  <li>Name</li>
-  <li>Author</li>
-  <li>Tags</li>
-</ul>
-
-<ul class="list-book" *ngFor="let book of books">
-  <li
-    class="d-flex"
-    (click)="onSelect(book)"
-    [class.selected]="book == selectedBook"
-  >
-    <div class="book-title">
-      {{ book.title }}
+<div class="p-20">
+  <ul class="label">
+    <div class="col-1">
+      <li class="w-10">STT</li>
     </div>
 
-    <div class="book-author">
-      {{ book.author }}
-    </div>
+    <div class="col-11 d-flex align-center">
+      <div class="col-4">
+        <li>Name</li>
+      </div>
 
-    <div class="book-tag">
-      <span *ngFor="let tag of book.tag">
-        {{ tag }}
-      </span>
-    </div>
-  </li>
-</ul>
+      <div class="col-4">
+        <li>Author</li>
+      </div>
 
-<app-book-details [book]="selectedBook"></app-book-details>
+      <div class="col-4">
+        <li>Tags</li>
+      </div>
+    </div>
+  </ul>
+
+  <ul class="list-book">
+    <li class="w-10" *ngFor="let book of books">
+      <a href="" routerLink="/detail/{{ book.id }}" class="d-flex w-10">
+        <div class="col-1">
+          <div class="col-12 book-id p-15 d-flex-center h-10 align-center">
+            {{ book.id }}
+          </div>
+        </div>
+        <div class="col-11 d-flex">
+          <div class="book-title col-4 p-15">
+            {{ book.title }}
+          </div>
+
+          <div class="book-author col-4 p-15">
+            {{ book.author }}
+          </div>
+
+          <div class="book-tag col-4 p-15">
+            {{ book.tag }}
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
 <app-message></app-message>

@@ -1,0 +1,109 @@
+{
+  "book": [
+    {
+      "id": 1,
+      "title": "Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "tag": "Adventure,Myth,Novel"
+    },
+    {
+      "id": 2,
+      "title": "Sherlock Holmes",
+      "author": "Sir Arthur Conan Doyle",
+      "tag": [
+        "Detective",
+        "Horror"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Hobbit ",
+      "author": "J. R. R. Tolkien",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Ten Little Niggers",
+      "author": "Agatha Christie",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The God Father ",
+      "author": "Mario Puzo",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "A Stranger in the Mirror",
+      "author": "Sidney Sheldon",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Are You Afraid of the Dark?",
+      "author": "Sidney Sheldon",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ring",
+      "author": "Suzuki Koji",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "The Captain of the Polestar, and other tales",
+      "author": "Sir Arthur Conan Doyle",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "If Tomorrow Comes ",
+      "author": "Sidney Sheldon",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "The Hound of the Baskervilles",
+      "author": "Sir Arthur Conan Doyle",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Nothing Lasts Forever",
+      "author": "Sidney Sheldon",
+      "tag": [
+        "Novel",
+        "Adventure"
+      ]
+    }
+  ]
+}
